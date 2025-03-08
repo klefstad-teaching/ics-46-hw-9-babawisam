@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    string filename = "../src/largest.txt";
+    string filename = "../src/small.txt";
     Graph G;
     
     try {
