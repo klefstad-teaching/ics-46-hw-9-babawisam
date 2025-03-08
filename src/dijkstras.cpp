@@ -61,6 +61,8 @@ std::vector<int> extract_shortest_path(const std::vector<int>& distances, const 
         path.push_back(at);
     }
     
+    std::reverse(path.begin(), path.end());
+    
     return path;
 }
 
@@ -70,10 +72,8 @@ void print_path(const vector<int>& path, int total) {
         return;
     }
     
-    vector<int> reversed_path = path;
-    std::reverse(reversed_path.begin(), reversed_path.end());
-    for (size_t i = 0; i < reversed_path.size(); i++) {
-        cout << reversed_path[i] << " ";
+    for (size_t i = 0; i < path.size(); i++) {
+        cout << path[i] << " ";
     }
     cout << endl;
     cout << "Total cost is " << total << endl;
