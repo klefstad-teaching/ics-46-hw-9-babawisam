@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    string filename = "../src/largest.txt";  // Using the same filename as in the sample
+    string filename = "../src/largest.txt";
     Graph G;
     
     try {

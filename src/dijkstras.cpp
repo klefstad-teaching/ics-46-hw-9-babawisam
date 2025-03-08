@@ -13,7 +13,6 @@ std::vector<int> dijkstra_shortest_path(const Graph& G, int source, std::vector<
         
         Node(int v, int w) : vertex(v), weight(w) {}
         
-        // For priority queue to order by smallest weight
         bool operator>(const Node& other) const {
             return weight > other.weight;
         }
