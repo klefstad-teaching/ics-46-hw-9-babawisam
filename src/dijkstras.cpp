@@ -57,7 +57,7 @@ std::vector<int> extract_shortest_path(const std::vector<int>& distances, const 
         return path;
     }
     
-    if (distances[destination] == INF) {
+    if (distances[destination] == INF || distances[destination] == 0) {
         return path;
     }
     
